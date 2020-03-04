@@ -1,10 +1,14 @@
 {
   "name": "@aleksejdix/vue-xstate",
   "description": "Renderless Vue.js component for xState Machine",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "private": false,
   "main": "./dist/vue-xstate.common.js",
   "module": "./dist/vue-xstate.esm.js",
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksejDix/vue-xstate.git"
+  },
   "scripts": {
     "serve": "vue serve Machine.vue",
     "build": "vue-cli-service build",
@@ -35,5 +39,8 @@
     "rollup-plugin-uglify": "^3.0.0",
     "rollup-plugin-vue": "^4.7.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "files": [
+    "dist/*"
+  ]
 }
