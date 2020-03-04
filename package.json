@@ -3,7 +3,8 @@
   "description": "Renderless Vue.js component for xState Machine",
   "version": "0.1.5",
   "private": false,
-  "main": "./dist/vue-xstate.esm.js",
+  "main": "./dist/vue-xstate.common.js",
+  "module": "./dist/vue-xstate.esm.js",
   "scripts": {
     "serve": "vue serve Machine.vue",
     "build": "vue-cli-service build",
