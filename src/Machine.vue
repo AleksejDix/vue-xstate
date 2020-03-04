@@ -6,8 +6,6 @@
 
 <script>
 import { interpret } from "xstate";
-import Machine from "@aleksejdix/vue-xstate";
-console.log(Machine);
 
 export default {
   name: "Machine",
