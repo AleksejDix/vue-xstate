@@ -2,23 +2,10 @@
 
 ## Project setup
 ```
-yarn install
+npm i @aleksejdix/vue-xstate
 ```
 
-### Compiles and hot-reloads for development
+### Import Component
 ```
-yarn serve
+import Machine from 'vue-xstate'
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

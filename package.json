@@ -1,26 +1,38 @@
 {
-  "name": "vue-xstate",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@aleksejdix/vue-xstate",
+  "description": "Renderless Vue.js component for xState Machine",
+  "version": "0.1.4",
+  "private": false,
+  "main": "./dist/vue-xstate.esm.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue serve Machine.vue",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lib": "vue-cli-service build --target lib --name vue-xstate ./src/components/index.js",
+    "lint": "vue-cli-service lint",
+    "bundle": "rollup -c build/rollup.conf.js",
+    "publish": "npm publish --access public"
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "xstate": "^4.8.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
     "prettier": "^1.19.1",
+    "rollup": "^0.59.4",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-uglify": "^3.0.0",
+    "rollup-plugin-vue": "^4.7.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
